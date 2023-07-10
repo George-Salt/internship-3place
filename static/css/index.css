@@ -1,0 +1,662 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaPT-Book.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "FuturaPT";
+}
+
+body::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0083fc;
+}
+
+.header {
+  position: fixed;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80vw;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header .logo {
+  width: 70px;
+  transition: all 0.3s;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.header .logo:hover {
+  width: 70px;
+  transform: scale(1.1);
+}
+
+.header .links {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .links a {
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.header .links a:hover {
+  color: #0083fc;
+  text-decoration: underline;
+}
+
+.header-text {
+  font-size: 35px;
+  display: flex;
+}
+
+.black-text {
+  color: black;
+}
+
+.blue-text {
+  color: #0083fc;
+  margin: auto 16.5px;
+}
+
+.main .section-about-school {
+  margin-top: 100px;
+  background: linear-gradient(white, #daedfe);
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 150px;
+}
+
+p.desc {
+  font-size: 20px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+
+.tariffs-button {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+  background-color: #0083fc;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: #0083fc 3px solid;
+  font-weight: 900;
+}
+
+.tariffs-button:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.clouds {
+  width: 100%;
+  background: #daedfe;
+  height: 15px;
+  position: relative;
+}
+
+.clouds::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 20px 30px, white 24px, transparent 26px);
+}
+
+.main .section-about-course {
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.module {
+  background-color: #daedfe;
+  border-radius: 10px;
+  width: 80%;
+  min-height: 200px;
+  box-shadow: 0px 0px 30px #daedfe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.module .texts {
+  margin: 15px;
+  height: 100%;
+}
+
+.module .texts h2 {
+  font-size: 30px;
+  color: #0083fc;
+}
+
+.texts ul {
+  margin-left: 20px;
+  font-size: 20px;
+  list-style-type: square;
+}
+
+.module img {
+  margin: 10px;
+  height: 200px;
+}
+
+.module2 {
+  margin-left: 20%;
+}
+
+.module4 {
+  margin-left: 20%;
+}
+
+.module5 {
+  margin-bottom: 50px;
+}
+
+.wave {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  margin-left: -15px;
+  height: 40px;
+}
+
+.wave2 {
+  width: 360px;
+  margin-left: -20px;
+}
+
+.wave2 .circle {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(16px, transparent, transparent 5px, black 5px, black 10px, transparent 10px);
+  background-size: 30px 40px;
+}
+
+.wave2 .circle2 {
+  top: 20px;
+  left: 15px;
+  background-position: 0px -20px;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(16px, transparent, transparent 5px, #0083fc 5px, #0083fc 10px, transparent 10px);
+  background-size: 30px 40px;
+}
+
+.circle2 {
+  top: 20px;
+  left: 15px;
+  background-position: 0px -20px;
+}
+
+.main .section-rates {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+  background-color: #daedfe;
+}
+
+.rates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rates .rate .rate-image {
+  width: 500px;
+  margin-bottom: 12px;
+}
+
+.main .section-lessons {
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-flex-left {
+  justify-content: flex-start;
+}
+
+.horizontal-flex-right {
+  justify-content: flex-end;
+}
+
+.horizontal-flex img {
+  width: 100px;
+}
+
+.lesson {
+  width: 50%;
+  background-color: #daedfe;
+  border-radius: 50px;
+}
+
+.lesson .texts {
+  margin: 15px;
+  height: 100%;
+}
+
+.lesson .texts h2 {
+  font-size: 30px;
+  color: #0083fc;
+  margin: 0;
+}
+
+.l1 {
+  border-bottom-right-radius: 0;
+}
+
+.l2, .l4 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.l3, .l5 {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.l6 {
+  border-top-left-radius: 0;
+}
+
+.conference {
+  margin-top: 30px;
+  width: 50%;
+  height: 350px;
+  background-color: #daedfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.conference img {
+  width: calc(100% - 20px);
+}
+
+.star {
+  margin: auto 50px;
+}
+
+.line {
+  background-color: #0083fc;
+  height: 20px;
+  width: 100%;
+  transform: rotate(2deg);
+}
+
+.wave-two-colors {
+  width: 100%;
+  background: white;
+  height: 30px;
+  position: relative;
+}
+
+.wave-two-colors::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+  radial-gradient(circle at 10px -5px, transparent 12px, #daedfe 13px);
+}
+
+.wave-two-colors::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+  radial-gradient(circle at 10px 15px, #daedfe 12px, transparent 13px);
+}
+
+.main .section-certificate {
+  background-color: #daedfe;
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+}
+
+.documents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.document img {
+  margin-top: 20px;
+  width: calc(100% - 20px);
+}
+
+.wave-two-colors-rotated {
+  width: 100%;
+  background: #daedfe;
+  height: 30px;
+  position: relative;
+}
+
+.wave-two-colors-rotated::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+  radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.wave-two-colors-rotated::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+  radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.main .section-license {
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+}
+
+.license .license-img {
+  padding: 10px;
+  background-color: #daedfe;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.tax-eduction {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .section-tariffs {
+  background-color: #daedfe;
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+}
+
+.tariffs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tariff {
+  width: 300px;
+  padding: 20px;
+  border: #0083fc 3px solid;
+  border-radius: 10px;
+}
+
+.tariff h2 {
+  font-size: 30px;
+  color: #0083fc;
+  margin: 0;
+}
+
+.texts {
+  margin: 10px auto;
+}
+
+.texts p {
+  font-size: 20px;
+}
+
+.lessons-all {
+  font-weight: 900;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.price .price-no {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.price .price-yes {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #0083fc;
+}
+
+.buttons {
+  margin-bottom: 12px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: #0083fc 3px solid;
+  font-weight: 900;
+  color: white;
+  background-color: #0083fc;
+  font-size: 20px;
+  margin-right: 17px;
+  transition: all 0.3s;
+}
+
+.buttons a:hover {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: #0083fc 3px solid;
+  font-weight: 900;
+  color: #0083fc;
+  background-color: #daedfe;
+  font-size: 20px;
+  margin-right: 17px;
+}
+
+.tariff-margin {
+  margin-bottom: 30px;
+}
+
+.vertical-flex .star {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 230px;
+  background-image: url("../imgs/star2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.star p {
+  font-weight: 900;
+  margin: 63px;
+  margin-left: 52px;
+}
+
+.main .section-pluses {
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 20px;
+}
+
+.pluses {
+  display: flex;
+  flex-direction: column;
+}
+
+.plus {
+  margin-bottom: 30px;
+}
+
+.plus h2 {
+  font-size: 30px;
+  color: #0083fc;
+  margin: 0;
+}
+
+.plus p {
+  font-size: 20px;
+}
+
+.plus-left {
+  align-self: left;
+}
+
+.plus-center {
+  align-self: center;
+}
+
+.plus-right {
+  align-self: flex-end;
+}
+
+.main .section-hint {
+  background-color: #daedfe;
+  padding-top: 50px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+}
+
+.section-hint h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-hint .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-hint .buttons a {
+  background-color: transparent;
+  border: black 3px solid;
+  color: black;
+  margin: 10px;
+}
+
+.section-hint .buttons a:hover {
+  background-color: black;
+  border: black 3px solid;
+  color: #daedfe;
+}
+
+.section-hint .buttons .star {
+  width: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.footer p {
+  margin: 10px 0;
+  color: grey;
+  font-size: 20px;
+  text-decoration: none;
+}
