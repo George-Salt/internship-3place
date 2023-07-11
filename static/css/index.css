@@ -855,6 +855,7 @@
 
   .main .section-about-school {
     margin-top: 70px;
+    padding-bottom: 30px;
     height: calc(100vh - 160px);
     background: linear-gradient(white, #daedfe);
   }
