@@ -158,21 +158,25 @@
   /* Header */
 
   .header {
+    display: flex;
+    justify-content: center;
     position: fixed;
     margin-top: -70px;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+  }
+
+  .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10vw;
-    padding-right: 10vw;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 80vw;
-    z-index: 5;
-    background-color: rgba(255, 255, 255, 0.7);
+    width: 1020px;
   }
 
-  .header .logo {
+  .header-content .logo {
     width: 60px;
     transition: all 0.3s;
     background-color: white;
@@ -180,11 +184,11 @@
     border-radius: 10px;
   }
 
-  .header .logo:hover {
+  .header-content .logo:hover {
     transform: scale(1.1);
   }
 
-  .header .links {
+  .header-content .links {
     color: black;
     font-weight: 800;
     font-size: 20px;
@@ -194,7 +198,7 @@
     align-items: center;
   }
 
-  .header .links a {
+  .header-content .links a {
     padding: 5px;
     border-radius: 10px;
     color: black;
@@ -202,7 +206,7 @@
     transition: all 0.3s;
   }
 
-  .header .links a:hover {
+  .header-content .links a:hover {
     color: #0083fc;
     text-decoration: underline;
   }
@@ -215,16 +219,20 @@
 
   .main .section {
     padding-top: 80px;
-    padding-left: 10vw;
-    padding-right: 10vw;
     padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main .section .section-content {
+    width: 1020px;
   }
 
   /* School */
 
   .main .section-about-school {
     margin-top: 70px;
-    height: calc(100vh - 160px);
+    height: 400px;
     background: linear-gradient(white, #daedfe);
   }
 
@@ -344,7 +352,7 @@
   .lesson {
     width: 50%;
     background-color: #daedfe;
-    border-radius: 50px;
+    border-radius: 10px;
   }
 
   .lesson .texts {
@@ -570,7 +578,7 @@
   }
 
   .plus {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .plus h2 {
@@ -601,33 +609,33 @@
     background-color: #daedfe;
   }
 
-  .section-hint h1 {
+  .section-hint .section-content .header-text {
     font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
   }
 
-  .section-hint .buttons {
+  .section-hint .section-content .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  .section-hint .buttons a {
+  .section-hint .section-content .buttons a {
     background-color: transparent;
     border: black 3px solid;
     color: black;
     margin: 10px;
   }
 
-  .section-hint .buttons a:hover {
+  .section-hint .section-content .buttons a:hover {
     background-color: black;
     border: black 3px solid;
     color: #daedfe;
   }
 
-  .section-hint .buttons .star {
+  .section-hint .section-content .buttons .star {
     width: 100px;
   }
 
@@ -635,18 +643,35 @@
 
   .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  .footer p {
-    margin: 10px 0;
-    color: grey;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1020px;
+  }
+
+  .footer-content div p {
+    color: black;
     font-size: 20px;
-    text-decoration: none;
+  }
+
+  .footer-content div a {
+    color: black;
+    font-size: 20px;
+  }
+
+  .footer-content div h1 {
+    color: #0083fc;
+    margin-bottom: 5px;
+  }
+
+  .footer-docs {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1164,7 +1189,7 @@
   /* Pluses */
 
   .main .section-pluses {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .pluses {
@@ -1177,7 +1202,7 @@
   }
 
   .plus .wave {
-    margin: 0;
+    display: none;
   }
 
   .plus h2 {
@@ -1191,7 +1216,7 @@
   }
 
   .plus-left {
-    align-self: left;
+    align-self: center;
   }
 
   .plus-center {
@@ -1199,7 +1224,7 @@
   }
 
   .plus-right {
-    align-self: flex-end;
+    align-self: center;
   }
 
   /* Hint */
@@ -1245,17 +1270,30 @@
 
   .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  .footer p {
-    margin: 10px 0;
-    color: grey;
+  .footer-content div p {
+    color: black;
     font-size: 20px;
-    text-decoration: none;
+  }
+
+  .footer-content div a {
+    color: black;
+    font-size: 20px;
+  }
+
+  .footer-content div h1 {
+    color: #0083fc;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .footer-docs {
+    display: flex;
+    flex-direction: column;
   }
 }
